@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+        h1{
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .button{
+            background-color: blue;
+            color: aliceblue;
+            width: 305px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .email,.password{
+            border-radius: 5px;
+            height: 30px;
+        }
+    </style>
+</head> 
+<body>
+    <h1>Login</h1>
+    <form>
+        <table>
+            <tr>
+                <td><input type="text" placeholder="Email" size="40" class="email"></td>
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="Password" size="40" class="password"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">아이디 저장하기</td>
+            </tr>
+        </table>
+        <button type="button" class="button">Login</button>
+    </form>
+</body>
+</html>
