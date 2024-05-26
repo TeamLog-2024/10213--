@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(var i=0;i<5;i++){
+            for(var j=4;j>i;j--){
+                document.write('&nbsp');
+            }
+            if(i!=4){
+                for(var j=1;j>0;j--){
+                    document.write('*');
+                }
+                for(var j=0;j<2*i-1;j++){
+                    document.write('&nbsp');
+                }
+            }
+            if(i!=0&&i!=4){
+                for(var j=1;j>0;j--){
+                    document.write('*');
+                }
+            }
+            else if(i==4){
+                for(var j=9;j>0;j--){
+                    document.write('*');
+                }
+            }
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>
