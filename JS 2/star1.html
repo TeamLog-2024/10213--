@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(var i=0;i<7;i++){
+            if(i==0||i==6){
+                for(var j=0;j<7;j++){
+                    document.write('-');
+                }
+            } 
+            else {
+                for(var j=0;j<7;j++){
+                    if(j==0||j==6){
+                        document.write('|');
+                    } 
+                    else if(j==i||j==6-i){
+                        document.write('*');
+                    } 
+                    else{
+                        document.write('&nbsp');
+                    }
+                }
+            }
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>
