@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <button id="rand">랜덤</button>
+    <p id="prt"></p>
+    <script>
+        document.getElementById('rand').onclick=function(){
+            let num=(Math.random()*20+1).toFixed(0);
+            document.getElementById('result').innerText=num;
+        }
+    </script>
+</body>
+</html>
