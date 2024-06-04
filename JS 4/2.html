@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body onload="prt()">
+    <p id="out"></p>
+    <script>
+        function prt() {
+            let a = [];
+            let out = document.getElementById('out');
+            document.onkeydown = function() {
+                a += event.key; 
+                out.textContent = a;
+            }
+        }
+    </script>
+</body>
+</html>
