@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="out"></div>
+    <script>
+        function search(a){
+            let word1=document.getElementById("in").value;
+            let word2=document.getElementById("out");
+            let url='https://www.google.com/search?q='+word1;
+            window.open(url);
+        }
+    </script>
+    <form>
+        <input width="50" height="5" name="word" id="in">
+        <button type="button" onclick="search(this)">검색</button>
+    </form>
+</body>
+</html>
