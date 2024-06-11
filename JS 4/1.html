@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onkeypress="press()">
-    <p id="out"></p>
+<body>
+    <p id="out">0combo</p>
     <script>
-        function press(){
             let combo=0;
             let out=document.getElementById('out');
-            window.onkeydown=function(){
-                if(event.key=='Backspace'){
-                combo=0;
+            window.onkeydown=function(down){
+                if(down.key=='Backspace'){
+                    combo=0;
                 } 
                 else{
-                combo++;
+                    combo++;
                 }
                 out.textContent=combo+'combo';
             }
-        }
     </script>
   </body>
 </html>
